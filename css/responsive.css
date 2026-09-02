@@ -1,0 +1,747 @@
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+
+/* =========================================
+   NOTEBOOKS / TELAS MENORES
+========================================= */
+
+@media (max-width:1100px){
+
+    .navbar{
+        padding:0 30px;
+    }
+
+    .navbar ul{
+        gap:22px;
+        margin-right:18px;
+    }
+
+    .hero{
+        grid-template-columns:45% 55%;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .hero h1{
+        font-size:54px;
+    }
+
+    .stats{
+        gap:35px;
+    }
+
+    .hero-profile{
+        display:none;
+    }
+
+    .hero-visual{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        grid-template-columns:350px 1fr;
+        gap:50px;
+    }
+
+    .project-grid{
+        gap:20px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:850px){
+
+    .navbar{
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 22px;
+
+    position:relative;
+}
+
+.navbar ul{
+    position:absolute;
+
+    top:80px;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:0;
+
+    background:#111;
+
+    padding:0 22px;
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+        max-height .4s ease,
+        opacity .3s ease,
+        padding .3s ease;
+}
+
+.navbar ul.menu-open{
+    max-height:420px;
+
+    padding-top:20px;
+    padding-bottom:25px;
+
+    opacity:1;
+    visibility:visible;
+}
+
+.navbar ul li{
+    width:100%;
+}
+
+.navbar ul li a{
+    display:block;
+
+    width:100%;
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+    font-size:14px;
+}
+
+
+/* Esconde orçamento do desktop no mobile */
+
+.nav-btn{
+    display:none;
+}
+
+
+/* Mostra hambúrguer */
+
+.menu-toggle{
+    display:block;
+}
+
+    /* NAVBAR */
+
+    .navbar{
+        padding:0 25px;
+    }
+
+    .logo{
+        font-size:40px !important;
+    }
+
+    .navbar ul{
+        display:none;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height:auto;
+
+        grid-template-columns:1fr;
+
+        padding:
+            130px
+            25px
+            70px;
+
+        gap:50px;
+    }
+
+    .hero-text{
+        max-width:600px;
+    }
+
+    .hero h1{
+        font-size:58px;
+    }
+
+    .hero p{
+        max-width:520px;
+    }
+
+    .hero-visual{
+        width:100%;
+        height:500px;
+
+        display:block;
+
+        margin:0;
+
+        transform:none;
+    }
+
+    .hero-image{
+        width:100%;
+        height:500px;
+    }
+
+    .hero-image img{
+        height:500px;
+
+        left:50%;
+
+        transform:translateX(-50%);
+    }
+
+    .bg-rb{
+        font-size:280px;
+
+        left:50%;
+        top:50%;
+    }
+
+
+    /* SOBRE */
+
+    section{
+        padding:85px 25px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .about img{
+        max-width:500px;
+    }
+
+    .about h2{
+        font-size:42px;
+    }
+
+
+    /* PROJETOS */
+
+    .project-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+
+    /* SERVIÇOS */
+
+    .services-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+
+    /* CONTATO */
+
+    .contact h2{
+        font-size:48px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+
+        gap:45px;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width:600px){
+
+    /* HEADER */
+
+    header{
+        height:70px;
+    }
+
+    .navbar{
+        height:70px;
+
+        padding:0 20px;
+    }
+
+    .logo{
+        font-size:36px !important;
+    }
+
+    .nav-btn{
+        padding:10px 15px;
+
+        font-size:12px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        padding:
+            110px
+            20px
+            55px;
+
+        gap:35px;
+    }
+
+    .hero-text span{
+        font-size:10px;
+    }
+
+    .hero h1{
+        font-size:45px;
+
+        line-height:1;
+
+        letter-spacing:-1px;
+
+        margin:16px 0 20px;
+    }
+
+    .hero p{
+        font-size:15px;
+
+        line-height:1.7;
+    }
+
+
+    /* BOTÕES */
+
+    .hero-buttons{
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+        margin:25px 0;
+    }
+
+    .btn-black,
+    .btn-white{
+        width:100%;
+
+        max-width:280px;
+    }
+
+
+    /* ESTATÍSTICAS */
+
+    .stats{
+        gap:25px;
+
+        flex-wrap:wrap;
+
+        margin-top:25px;
+    }
+
+    .stats h2{
+        font-size:23px;
+    }
+
+    .stats span{
+        font-size:11px;
+    }
+
+
+    /* FOTO */
+
+    .hero-visual{
+        height:420px;
+    }
+
+    .hero-image{
+        height:420px;
+    }
+
+    .hero-image img{
+        height:420px;
+
+        max-width:none;
+    }
+
+    .bg-rb{
+        font-size:210px;
+    }
+
+
+    /* TÍTULOS DAS SEÇÕES */
+
+    section{
+        padding:70px 20px;
+    }
+
+    .section-title{
+        margin-bottom:40px;
+    }
+
+    .section-title h2{
+        font-size:36px;
+    }
+
+
+    /* SOBRE */
+
+    .about{
+        gap:35px;
+    }
+
+    .about h2{
+        font-size:38px;
+    }
+
+    .about p{
+        font-size:14px;
+    }
+
+
+    /* PROJETOS */
+
+    .project-grid{
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+    .placeholder{
+        height:350px;
+    }
+
+    .card h3{
+        font-size:25px;
+    }
+
+
+    /* SERVIÇOS */
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid div{
+        padding:28px;
+    }
+
+
+    /* CONTATO */
+
+    .contact h2{
+        font-size:39px;
+
+        line-height:1.1;
+    }
+
+    .contact p{
+        font-size:14px;
+    }
+
+    .btn-contact{
+        padding:15px 25px;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        padding:40px 20px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+    .footer-brand{
+        gap:20px;
+    }
+
+    .footer-nav{
+        grid-template-columns:repeat(2,max-content);
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width:400px){
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero-visual{
+        height:370px;
+    }
+
+    .hero-image{
+        height:370px;
+    }
+
+    .hero-image img{
+        height:370px;
+    }
+
+    .bg-rb{
+        font-size:180px;
+    }
+
+    .stats{
+        gap:18px;
+    }
+
+    .contact h2{
+        font-size:34px;
+    }
+
+}
+
+@media (max-width:850px){
+
+    .services-heading{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .services-heading h2{
+        font-size:42px;
+    }
+
+    .service-content{
+        grid-template-columns:220px 1fr;
+        gap:25px;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .services{
+        padding:75px 20px;
+    }
+
+    .services-heading h2{
+        font-size:36px;
+    }
+
+    .service-item{
+        grid-template-columns:45px 1fr 35px;
+
+        gap:15px;
+
+        padding:25px 0;
+    }
+
+    .service-content{
+        grid-template-columns:1fr;
+
+        gap:8px;
+    }
+
+    .service-content h3{
+        font-size:25px;
+    }
+
+    .service-content p{
+        font-size:12px;
+    }
+
+    .service-arrow{
+        width:34px;
+        height:34px;
+    }
+
+}
+
+/* =========================================
+   SOBRE — RESPONSIVO
+========================================= */
+
+@media (max-width:850px){
+
+    .about{
+        grid-template-columns:1fr;
+
+        gap:50px;
+    }
+
+    .about-image{
+        max-width:520px;
+    }
+
+    .about-photo{
+        height:560px;
+    }
+
+    .about-content{
+        max-width:650px;
+    }
+
+    .about-content h2{
+        font-size:43px;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .about{
+        gap:40px;
+    }
+
+    .about-photo{
+        height:480px;
+    }
+
+    .about-content h2{
+        font-size:36px;
+
+        line-height:1.1;
+
+        margin-bottom:24px;
+    }
+
+    .about-content .about-intro{
+        font-size:15px;
+    }
+
+    .about-content p{
+        font-size:13px;
+    }
+
+    .about-details{
+        grid-template-columns:1fr;
+    }
+
+    .about-details div{
+        padding:18px 0;
+    }
+
+    .about-details div:nth-child(2){
+        padding-left:0;
+
+        border-left:none;
+        border-top:1px solid #DDDDDD;
+    }
+
+    .about-details div:nth-child(3){
+        grid-column:auto;
+    }
+
+}
+
+/* =========================================
+   CONTATO — RESPONSIVO
+========================================= */
+
+@media (max-width:850px){
+
+    .contact{
+        padding:100px 25px;
+    }
+
+    .contact h2{
+        font-size:52px;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .contact{
+        padding:80px 20px;
+    }
+
+    .contact h2{
+        font-size:39px;
+
+        line-height:1.08;
+    }
+
+    .contact p{
+        font-size:14px;
+    }
+
+    .btn-contact{
+        width:100%;
+
+        max-width:280px;
+    }
+
+    .contact-email{
+        font-size:11px;
+
+        word-break:break-word;
+    }
+
+}
+
+/* =========================================
+   MOBILE/TABLET — MOSTRAR SÓ UMA FOTO
+========================================= */
+
+@media (max-width:850px){
+
+    /* Esconde apenas a foto da seção Sobre */
+    .about-image{
+        display:none;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .about-content{
+        max-width:100%;
+    }
+
+}
+
+@media (max-width:850px){
+
+    .mobile-budget{
+        display:block;
+    }
+
+    .mobile-budget a{
+        margin-top:12px;
+
+        background:#FFFFFF;
+
+        color:#111 !important;
+
+        text-align:center;
+
+        border-bottom:none !important;
+    }
+
+}

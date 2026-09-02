@@ -1,0 +1,237 @@
+/* =========================================
+   ANIMAÇÕES DO PORTFÓLIO
+========================================= */
+
+
+/* ===== ANIMAÇÃO BASE ===== */
+
+.reveal{
+    opacity:0;
+    transform:translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* ===== ENTRADA PELA ESQUERDA ===== */
+
+.reveal-left{
+    opacity:0;
+    transform:translateX(-40px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+}
+
+.reveal-left.active{
+    opacity:1;
+    transform:translateX(0);
+}
+
+
+/* ===== ENTRADA PELA DIREITA ===== */
+
+.reveal-right{
+    opacity:0;
+    transform:translateX(40px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+}
+
+.reveal-right.active{
+    opacity:1;
+    transform:translateX(0);
+}
+
+
+/* ===== ZOOM SUAVE ===== */
+
+.reveal-scale{
+    opacity:0;
+    transform:scale(.96);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+}
+
+.reveal-scale.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-text{
+    animation:heroText 1s ease forwards;
+}
+
+@keyframes heroText{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+.hero-visual{
+    animation:heroImage 1.1s ease forwards;
+}
+
+@keyframes heroImage{
+
+    from{
+        opacity:0;
+        transform:translateX(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/* ===== FOTO ===== */
+
+.hero-image img{
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+
+/* ===== RB FUNDO ===== */
+
+.bg-rb{
+    animation:rbFade 1.4s ease forwards;
+}
+
+@keyframes rbFade{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.btn-black,
+.btn-white,
+.btn-contact,
+.nav-btn{
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.btn-black:hover,
+.btn-white:hover,
+.btn-contact:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+
+/* =========================================
+   CARDS DE PROJETOS
+========================================= */
+
+.card{
+    transition:transform .35s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+
+/* =========================================
+   SERVIÇOS
+========================================= */
+
+.services-grid div{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.services-grid div:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.05);
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.hero-profile a,
+.footer a{
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
+
+        scroll-behavior:auto !important;
+    }
+
+}
