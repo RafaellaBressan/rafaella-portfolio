@@ -275,7 +275,7 @@
 
     /* HEADER */
 
-   @media (max-width:600px){
+
 
     header{
         height:76px;
@@ -353,7 +353,7 @@
         top:76px;
     }
 
-}
+    
 
     .logo{
         font-size:36px !important;
