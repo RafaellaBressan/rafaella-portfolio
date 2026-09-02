@@ -817,7 +817,7 @@
 }
 
 /* =========================================
-   CORREÇÃO DEFINITIVA HEADER MOBILE
+   HEADER MOBILE — CORREÇÃO FINAL
 ========================================= */
 
 @media (max-width:850px){
@@ -831,13 +831,16 @@
         height:76px !important;
         min-height:76px !important;
 
-        padding:0 !important;
         margin:0 !important;
+        padding:0 !important;
 
         background:#111 !important;
 
+        border-bottom:1px solid rgba(255,255,255,.08) !important;
+
         z-index:9999 !important;
     }
+
 
     .navbar{
         position:relative !important;
@@ -848,16 +851,24 @@
         height:76px !important;
         min-height:76px !important;
 
-        padding:0 22px !important;
         margin:0 !important;
+        padding:0 !important;
 
-        display:flex !important;
-        align-items:center !important;
-        justify-content:space-between !important;
+        display:block !important;
     }
 
+
+    /* RB */
+
     .navbar .logo{
-        position:static !important;
+        position:absolute !important;
+
+        left:22px !important;
+        top:50% !important;
+        right:auto !important;
+        bottom:auto !important;
+
+        transform:translateY(-50%) !important;
 
         display:block !important;
 
@@ -869,26 +880,30 @@
 
         color:#fff !important;
 
-        transform:none !important;
-
-        z-index:2 !important;
+        z-index:10002 !important;
     }
+
+
+    /* botão desktop */
 
     .nav-btn{
         display:none !important;
     }
 
+
+    /* hambúrguer */
+
     .menu-toggle{
         display:block !important;
 
-        position:relative !important;
+        position:absolute !important;
 
-        top:auto !important;
-        right:auto !important;
-        bottom:auto !important;
+        right:22px !important;
+        top:50% !important;
         left:auto !important;
+        bottom:auto !important;
 
-        flex:0 0 38px !important;
+        transform:translateY(-50%) !important;
 
         width:38px !important;
         height:38px !important;
@@ -897,18 +912,17 @@
         padding:0 !important;
 
         background:transparent !important;
-        border:0 !important;
+        border:none !important;
 
-        transform:none !important;
-
-        z-index:2 !important;
+        z-index:10002 !important;
     }
+
 
     .menu-toggle span{
         position:absolute !important;
 
-        right:0 !important;
-        left:auto !important;
+        left:7px !important;
+        right:auto !important;
 
         width:24px !important;
         height:1px !important;
@@ -916,25 +930,34 @@
         margin:0 !important;
 
         background:#fff !important;
+
+        transition:.3s ease !important;
     }
+
 
     .menu-toggle span:first-child{
         top:14px !important;
     }
 
+
     .menu-toggle span:last-child{
         top:22px !important;
     }
+
 
     .menu-toggle.active span:first-child{
         top:18px !important;
         transform:rotate(45deg) !important;
     }
 
+
     .menu-toggle.active span:last-child{
         top:18px !important;
         transform:rotate(-45deg) !important;
     }
+
+
+    /* MENU ABERTO */
 
     .navbar ul{
         position:absolute !important;
@@ -947,10 +970,12 @@
         display:flex !important;
         flex-direction:column !important;
 
+        gap:0 !important;
+
         margin:0 !important;
         padding:0 22px !important;
 
-        gap:0 !important;
+        list-style:none !important;
 
         background:#111 !important;
 
@@ -961,11 +986,14 @@
         opacity:0 !important;
         visibility:hidden !important;
 
+        z-index:10001 !important;
+
         transition:
             max-height .35s ease,
             opacity .25s ease,
             padding .35s ease !important;
     }
+
 
     .navbar ul.menu-open{
         max-height:500px !important;
@@ -977,9 +1005,11 @@
         visibility:visible !important;
     }
 
+
     .navbar ul li{
         width:100% !important;
     }
+
 
     .navbar ul li a{
         display:block !important;
@@ -993,19 +1023,32 @@
         border-bottom:1px solid rgba(255,255,255,.12) !important;
     }
 
+
+    /* remove aquela linha branca do active no mobile */
+
+    .navbar ul li a::after{
+        display:none !important;
+    }
+
+
+    /* orçamento dentro do menu */
+
     .mobile-budget{
         display:block !important;
     }
 
+
     .mobile-budget a{
         margin-top:12px !important;
+
+        padding:16px !important;
 
         background:#fff !important;
         color:#111 !important;
 
         text-align:center !important;
 
-        border-bottom:0 !important;
+        border:none !important;
     }
 
 }
