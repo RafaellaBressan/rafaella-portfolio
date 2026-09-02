@@ -802,17 +802,39 @@
         display:block;
     }
 
-    .mobile-budget a{
-        margin-top:12px;
+   .mobile-budget a{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
 
-        background:#FFFFFF;
+    width:100% !important;
+    height:56px !important;
 
-        color:#111 !important;
+    margin-top:14px !important;
+    padding:0 20px !important;
 
-        text-align:center;
+    background:#FFFFFF !important;
+    color:#111111 !important;
 
-        border-bottom:none !important;
-    }
+    font-family:'Inter',sans-serif !important;
+    font-size:14px !important;
+    font-weight:500 !important;
+    letter-spacing:0 !important;
+    line-height:1 !important;
+
+    text-align:center !important;
+    text-decoration:none !important;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    border:none !important;
+    border-radius:2px !important;
+}
+
+.mobile-budget a::after{
+    display:none !important;
+}
 
 }
 
@@ -1038,17 +1060,40 @@
     }
 
 
-    .mobile-budget a{
-        margin-top:12px !important;
+.mobile-budget a{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
 
-        padding:16px !important;
+    width:100% !important;
+    height:56px !important;
 
-        background:#fff !important;
-        color:#111 !important;
+    margin-top:14px !important;
+    padding:0 20px !important;
 
-        text-align:center !important;
+    background:#FFFFFF !important;
+    color:#111111 !important;
 
-        border:none !important;
-    }
+    font-family:'Inter',sans-serif !important;
+    font-size:14px !important;
+    font-weight:500 !important;
+    letter-spacing:0 !important;
+
+    text-align:center !important;
+    text-decoration:none !important;
+
+    border:none !important;
+    border-radius:2px !important;
+}
+
+.navbar ul li.mobile-budget a{
+    color:#111111 !important;
+}
+
+.navbar ul li.mobile-budget a:visited,
+.navbar ul li.mobile-budget a:hover,
+.navbar ul li.mobile-budget a:active{
+    color:#111111 !important;
+}
 
 }
