@@ -1377,3 +1377,14 @@ button,
 .mobile-budget{
     display:none;
 }
+
+@media (max-width:600px){
+
+    .hero{
+        padding:
+            115px
+            20px
+            55px;
+    }
+
+}
