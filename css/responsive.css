@@ -1096,4 +1096,37 @@
     color:#111111 !important;
 }
 
+.navbar ul li.mobile-budget a,
+.navbar ul li.mobile-budget a:link,
+.navbar ul li.mobile-budget a:visited,
+.navbar ul li.mobile-budget a:hover,
+.navbar ul li.mobile-budget a:active{
+    background-color:#FFFFFF !important;
+    color:#111111 !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:100% !important;
+    min-height:56px !important;
+
+    padding:16px 20px !important;
+    margin-top:14px !important;
+
+    font-family:'Inter',sans-serif !important;
+    font-size:14px !important;
+    font-weight:500 !important;
+    letter-spacing:0 !important;
+
+    text-decoration:none !important;
+    opacity:1 !important;
+
+    border:1px solid #FFFFFF !important;
+}
+
+.navbar ul li.mobile-budget a::after{
+    display:none !important;
+}
+
 }
