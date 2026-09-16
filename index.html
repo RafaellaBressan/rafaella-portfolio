@@ -1,629 +1,673 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Rafaella Bressan | Desenvolvedora Web</title>
-
-    <meta name="description"
-        content="Desenvolvedora Web especializada em sites modernos, minimalistas e estratégicos.">
-
+    <meta
+      name="description"
+      content="Sites personalizados para apresentar seu negócio com clareza e personalidade. Conheça os projetos de Rafaella Bressan, desenvolvedora web em São Paulo."
+    />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rafaella Bressan | Desenvolvedora Web" />
+    <meta
+      property="og:description"
+      content="Design com intenção. Sites com personalidade. Conheça meus projetos e vamos conversar sobre o seu."
+    />
+    <meta
+      property="og:url"
+      content="https://rafaellabressan.github.io/rafaella-portfolio/"
+    />
     <link
-    rel="icon"
-    type="image/png"
-    href="assets/icons/favicon.png"
->
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-
-<body>
-
-    <!-- LOADER -->
-
-    <div id="loader">
-
-        <h1>RB</h1>
-
-    </div>
-
-    <!-- NAVBAR -->
-
-<header>
-
-    <nav class="navbar">
-
-        <a href="#inicio" class="logo">RB</a>
-
-    <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-
-        <li class="mobile-budget">
-            <a
-                href="https://wa.me/5511939620165"
-                target="_blank"
-            >
-                Solicitar orçamento ↗
-            </a>
-        </li>
-    </ul>
-
-    <a
-        href="https://wa.me/5511939620165"
-        target="_blank"
-        class="nav-btn"
-    >
-        Orçamento
-    </a>
-
-    <button class="menu-toggle" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-    </button>
-
-</nav>
-
+      rel="canonical"
+      href="https://rafaellabressan.github.io/rafaella-portfolio/"
+    />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a href="#principal" class="skip-link">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Rafaella Bressan — início"
+          >RB<span class="brand-name">RAFAELLA<br />BRESSAN</span></a
+        >
+        <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+          <a href="#projetos">Projetos</a><a href="#servicos">Serviços</a
+          ><a href="#sobre">Sobre</a><a href="#processo">Processo</a
+          ><a href="#contato">Contato</a
+          ><a
+            href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+            class="nav-mobile-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Solicitar orçamento <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+        <a
+          class="header-budget"
+          href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+          target="_blank"
+          rel="noopener noreferrer"
+          >Solicitar orçamento <span aria-hidden="true">↗</span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
     </header>
-
-    <!-- HERO -->
-
-    <section class="hero" id="inicio">
-
-        <div class="hero-text">
-
-            <span>DESENVOLVEDORA WEB</span>
-
-            <h1>
-                Sites que <br>
-                transformam <br>
-                negócios.
-            </h1>
-
+    <main id="principal">
+      <section class="hero container" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="label-line" aria-hidden="true"></span>DESENVOLVEDORA
+            WEB · SÃO PAULO
+          </div>
+          <h1 id="hero-title">
+            Seu negócio.<br />Um site <br /><em>à altura.</em>
+          </h1>
+          <p>
+            Transformo a identidade do seu negócio em um site que apresenta,
+            conecta e facilita o próximo contato.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projetos"
+              >Explore meus projetos <span aria-hidden="true">↓</span></a
+            ><a
+              href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+              class="text-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Vamos conversar <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-footnote">
+            <span>DESIGN COM INTENÇÃO.</span
+            ><span>DESENVOLVIMENTO SOB MEDIDA.</span>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <div class="portrait-photo">
+            <span class="portrait-monogram" aria-hidden="true">RB</span
+            ><img
+              src="assets/img/rafaella.jpg"
+              alt="Retrato de Rafaella Bressan"
+              width="1152"
+              height="922"
+              fetchpriority="high"
+            />
+          </div>
+          <figcaption>
+            <div>
+              <strong>Rafaella Bressan</strong
+              ><span>Design &amp; desenvolvimento web</span>
+            </div>
+            <a href="#sobre" aria-label="Conheça Rafaella Bressan">↗</a>
+          </figcaption>
+          <span class="portrait-index" aria-hidden="true"
+            >PORTFÓLIO / 2026</span
+          >
+        </figure>
+      </section>
+      <div class="intro-strip">
+        <div class="container">
+          <p>
+            Um site pensado para o seu negócio,<br /><strong
+              >do primeiro olhar ao próximo contato.</strong
+            >
+          </p>
+          <div>
+            <span>Identidade visual</span><span>Experiência no celular</span
+            ><span>Conteúdo claro</span>
+          </div>
+        </div>
+      </div>
+      <section
+        class="section projects"
+        id="projetos"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">01 / PROJETOS SELECIONADOS</span>
+              <h2 id="projects-title">
+                Diferentes negócios.<br /><em>Identidades únicas.</em>
+              </h2>
+            </div>
             <p>
-                Desenvolvo sites modernos, rápidos e estratégicos para ajudar empresas a se destacarem no digital.
+              Três projetos autorais para explorar como design e desenvolvimento
+              podem apresentar um negócio.
             </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projetos" class="btn-black">
-                    Ver projetos
-                </a>
-
-                <a href="https://wa.me/5511939620165" target="_blank" class="btn-white">
-                    Solicitar orçamento
-                </a>
-
-            </div>
-
-            <div class="stats">
-
-                <div>
-                    <h2>03</h2>
-                    <span>Projetos</span>
+          </div>
+          <div class="project-list">
+            <article class="project" aria-labelledby="project-bella-massa">
+              <div class="project-visual">
+                <div class="project-topline">
+                  <span>01</span><span>CAFETERIA & PADARIA</span
+                  ><span>2026</span>
                 </div>
-
-                <div>
-                    <h2>100%</h2>
-                    <span>Responsivo</span>
-                </div>
-
-                <div>
-                    <h2>SEO</h2>
-                    <span>Otimizado</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="hero-visual">
-
-    <div class="hero-image">
-
-        <div class="bg-rb">RB</div>
-
-        <img src="assets/img/rafaella.jpg" alt="Rafaella Bressan">
-
-    </div>
-
-    <div class="hero-profile">
-
-        <div class="profile-line"></div>
-
-        <h3>RAFAELLA BRESSAN</h3>
-
-        <p>Desenvolvedora Web</p>
-
-        <div class="profile-line small"></div>
-
-        <a href="#sobre">
-            Sobre mim
-            <span>→</span>
-        </a>
-
-    </div>
-
-</div>
-
-    </section>
-
-    <!-- SOBRE -->
-
-    <section class="about" id="sobre">
-
-    <div class="about-image reveal-left">
-
-        <span class="about-label">SOBRE MIM</span>
-
-        <div class="about-photo">
-            <img
-                src="assets/img/rafaella.jpg"
-                alt="Rafaella Bressan"
-            >
-        </div>
-
-    </div>
-
-
-    <div class="about-content reveal-right">
-
-        <span class="about-small">RAFAELLA BRESSAN</span>
-
-        <h2>
-            Desenvolvimento web com
-            propósito, estética e estratégia.
-        </h2>
-
-        <p class="about-intro">
-            Desenvolvo sites que unem design sofisticado,
-            performance e usabilidade, ajudando empresas
-            a transmitir credibilidade e fortalecer sua
-            presença no digital.
-        </p>
-
-        <p>
-            Cada projeto é pensado de forma personalizada,
-            buscando criar uma experiência visual moderna,
-            intuitiva e alinhada à identidade de cada negócio.
-        </p>
-
-
-        <div class="about-details">
-
-            <div>
-                <span>ÁREA</span>
-                <strong>Desenvolvimento Web</strong>
-            </div>
-
-            <div>
-                <span>LOCALIZAÇÃO</span>
-                <strong>São Paulo — SP</strong>
-            </div>
-
-            <div>
-                <span>FOCO</span>
-                <strong>Sites modernos e responsivos</strong>
-            </div>
-
-        </div>
-
-
-        <a href="#projetos" class="about-link">
-            Conheça meus projetos
-            <span>→</span>
-        </a>
-
-    </div>
-
-</section>
-
-    <!-- PROJETOS -->
-
-    <section class="projects" id="projetos">
-
-    <div class="section-title reveal">
-        <span>PROJETOS</span>
-        <h2>Projetos em destaque.</h2>
-    </div>
-
-
-    <div class="project-grid">
-
-
-        <!-- BELLA MASSA -->
-
-        <article class="project-card reveal">
-
-            <a
-                href="https://rafaellabressan.github.io/BELLA-MASSA/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-image"
-            >
-
-                <img
+                <a
+                  class="project-preview"
+                  href="https://rafaellabressan.github.io/BELLA-MASSA/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar demonstração de Bella Massa (abre em nova aba)"
+                  ><div class="browser-chrome" aria-hidden="true">
+                    <span class="window-dots"><i></i><i></i><i></i></span
+                    ><span>Bella Massa</span><span>↗</span>
+                  </div>
+                  <img
                     src="assets/img/projects/bella-massa.jpg"
-                    alt="Projeto Bella Massa"
+                    alt="Prévia da página inicial do projeto Bella Massa"
+                    width="891"
+                    height="761"
+                    loading="lazy"
+                  /><span class="preview-open"
+                    >Visitar demonstração
+                    <span aria-hidden="true">↗</span></span
+                  ></a
                 >
-
-                <div class="project-overlay">
-                    <span>Ver projeto</span>
-                    <div class="project-arrow">↗</div>
-                </div>
-
-            </a>
-
-
-            <div class="project-info">
-
-                <span>CAFETERIA • SITE INSTITUCIONAL</span>
-
-                <h3>Bella Massa</h3>
-
-                <p>
-                    Site desenvolvido para uma cafeteria artesanal,
-                    com foco em apresentação de produtos, cardápio,
-                    ambiente e pedidos pelo WhatsApp.
+              </div>
+              <div class="project-content">
+                <span class="project-kind">PROJETO CONCEITO</span>
+                <h3 id="project-bella-massa">Bella Massa</h3>
+                <p class="project-intro">
+                  Uma pausa que começa antes do primeiro café.
                 </p>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- STUDIO ÉCLAT -->
-
-        <article class="project-card reveal">
-
-            <a
-                href="https://rafaellabressan.github.io/STUDIO-ECLAT/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-image"
-            >
-
-                <img
+                <p>
+                  Conceito de site para uma cafeteria artesanal, com uma
+                  apresentação acolhedora de produtos, cardápio e ambiente.
+                </p>
+                <div class="project-tags" aria-label="Recursos apresentados">
+                  <span>Cardápio</span><span>Galeria do espaço</span
+                  ><span>Contato direto</span>
+                </div>
+                <details class="project-details">
+                  <summary>
+                    O que este projeto propõe <span aria-hidden="true">+</span>
+                  </summary>
+                  <p>
+                    Organizar o que a cafeteria oferece e tornar o caminho até o
+                    pedido mais fácil de encontrar.
+                  </p>
+                </details>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Gostei%20do%20projeto%20Bella%20Massa%20no%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Quero um site nessa linha
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project" aria-labelledby="project-studio-eclat">
+              <div class="project-visual">
+                <div class="project-topline">
+                  <span>02</span><span>BELEZA & CUIDADO</span><span>2026</span>
+                </div>
+                <a
+                  class="project-preview"
+                  href="https://rafaellabressan.github.io/STUDIO-ECLAT/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar demonstração de Studio Éclat (abre em nova aba)"
+                  ><div class="browser-chrome" aria-hidden="true">
+                    <span class="window-dots"><i></i><i></i><i></i></span
+                    ><span>Studio Éclat</span><span>↗</span>
+                  </div>
+                  <img
                     src="assets/img/projects/studio-eclat.jpg"
-                    alt="Projeto Studio Éclat"
+                    alt="Prévia da página inicial do projeto Studio Éclat"
+                    width="859"
+                    height="772"
+                    loading="lazy"
+                  /><span class="preview-open"
+                    >Visitar demonstração
+                    <span aria-hidden="true">↗</span></span
+                  ></a
                 >
-
-                <div class="project-overlay">
-                    <span>Ver projeto</span>
-                    <div class="project-arrow">↗</div>
-                </div>
-
-            </a>
-
-
-            <div class="project-info">
-
-                <span>BELEZA • SITE INSTITUCIONAL</span>
-
-                <h3>Studio Éclat</h3>
-
-                <p>
-                    Site sofisticado para um salão de beleza,
-                    apresentando serviços, galeria de trabalhos,
-                    depoimentos e agendamento pelo WhatsApp.
+              </div>
+              <div class="project-content">
+                <span class="project-kind">PROJETO CONCEITO</span>
+                <h3 id="project-studio-eclat">Studio Éclat</h3>
+                <p class="project-intro">
+                  Uma presença digital à altura do cuidado.
                 </p>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- DON BARBER -->
-
-        <article class="project-card reveal">
-
-            <a
-                href="https://rafaellabressan.github.io/DON-BARBER/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-image"
-            >
-
-                <img
+                <p>
+                  Conceito de site para um salão de beleza, com espaço para
+                  apresentar serviços, referências visuais e a experiência do
+                  studio.
+                </p>
+                <div class="project-tags" aria-label="Recursos apresentados">
+                  <span>Serviços</span><span>Galeria de referências</span
+                  ><span>Contato para agendar</span>
+                </div>
+                <details class="project-details">
+                  <summary>
+                    O que este projeto propõe <span aria-hidden="true">+</span>
+                  </summary>
+                  <p>
+                    Ajudar a visitante a conhecer os cuidados oferecidos e dar o
+                    próximo passo para conversar com o salão.
+                  </p>
+                </details>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Gostei%20do%20projeto%20Studio%20%C3%89clat%20no%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Quero um site nessa linha
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project" aria-labelledby="project-don-barber">
+              <div class="project-visual">
+                <div class="project-topline">
+                  <span>03</span><span>BARBEARIA & ESTILO</span
+                  ><span>2026</span>
+                </div>
+                <a
+                  class="project-preview"
+                  href="https://rafaellabressan.github.io/DON-BARBER/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar demonstração de Don Barber (abre em nova aba)"
+                  ><div class="browser-chrome" aria-hidden="true">
+                    <span class="window-dots"><i></i><i></i><i></i></span
+                    ><span>Don Barber</span><span>↗</span>
+                  </div>
+                  <img
                     src="assets/img/projects/don-barber.jpg"
-                    alt="Projeto Don Barber"
+                    alt="Prévia da página inicial do projeto Don Barber"
+                    width="846"
+                    height="772"
+                    loading="lazy"
+                  /><span class="preview-open"
+                    >Visitar demonstração
+                    <span aria-hidden="true">↗</span></span
+                  ></a
                 >
-
-                <div class="project-overlay">
-                    <span>Ver projeto</span>
-                    <div class="project-arrow">↗</div>
-                </div>
-
-            </a>
-
-
-            <div class="project-info">
-
-                <span>BARBEARIA • SITE INSTITUCIONAL</span>
-
-                <h3>Don Barber</h3>
-
-                <p>
-                    Site premium para barbearia, com apresentação
-                    de serviços, preços, galeria, equipe e chamada
-                    direta para agendamento.
+              </div>
+              <div class="project-content">
+                <span class="project-kind">PROJETO CONCEITO</span>
+                <h3 id="project-don-barber">Don Barber</h3>
+                <p class="project-intro">
+                  Personalidade em cada detalhe da apresentação.
                 </p>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-    <!-- SERVIÇOS -->
-
-   <section class="services" id="servicos">
-
-    <div class="services-container">
-
-        <div class="services-heading reveal">
-            <span>SERVIÇOS</span>
-            <h2>Como posso ajudar o seu negócio.</h2>
+                <p>
+                  Conceito de site para uma barbearia, reunindo serviços,
+                  preços, inspirações e informações sobre o espaço.
+                </p>
+                <div class="project-tags" aria-label="Recursos apresentados">
+                  <span>Serviços e preços</span
+                  ><span>Referências de cortes</span
+                  ><span>Apresentação da equipe</span>
+                </div>
+                <details class="project-details">
+                  <summary>
+                    O que este projeto propõe <span aria-hidden="true">+</span>
+                  </summary>
+                  <p>
+                    Apresentar a proposta da barbearia com clareza e orientar
+                    quem está escolhendo seu próximo cuidado.
+                  </p>
+                </details>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Gostei%20do%20projeto%20Don%20Barber%20no%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Quero um site nessa linha
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <p class="projects-note">
+            Os projetos acima são estudos autorais para portfólio. Não
+            representam trabalhos contratados por esses estabelecimentos.
+          </p>
         </div>
-
-        <div class="services-list">
-
-            <div class="service-item reveal">
-                <span class="service-number">01</span>
-
-                <div class="service-content">
-                    <h3>Sites Institucionais</h3>
-
-                    <p>
-                        Sites profissionais para apresentar sua empresa,
-                        fortalecer sua presença digital e gerar confiança.
-                    </p>
-                </div>
-
-                <span class="service-arrow">↗</span>
-            </div>
-
-            <div class="service-item reveal">
-                <span class="service-number">02</span>
-
-                <div class="service-content">
-                    <h3>Landing Pages</h3>
-
-                    <p>
-                        Páginas estratégicas desenvolvidas para divulgar
-                        serviços, campanhas e aumentar conversões.
-                    </p>
-                </div>
-
-                <span class="service-arrow">↗</span>
-            </div>
-
-            <div class="service-item reveal">
-                <span class="service-number">03</span>
-
-                <div class="service-content">
-                    <h3>Portfólios</h3>
-
-                    <p>
-                        Portfólios modernos para profissionais e marcas
-                        apresentarem trabalhos de forma elegante.
-                    </p>
-                </div>
-
-                <span class="service-arrow">↗</span>
-            </div>
-
-            <div class="service-item reveal">
-                <span class="service-number">04</span>
-
-                <div class="service-content">
-                    <h3>Lojas Virtuais</h3>
-
-                    <p>
-                        Estruturas digitais pensadas para apresentar produtos
-                        e criar uma experiência de compra clara e organizada.
-                    </p>
-                </div>
-
-                <span class="service-arrow">↗</span>
-            </div>
-
-            <div class="service-item reveal">
-                <span class="service-number">05</span>
-
-                <div class="service-content">
-                    <h3>SEO</h3>
-
-                    <p>
-                        Otimizações para melhorar estrutura, desempenho
-                        e visibilidade do site nos mecanismos de busca.
-                    </p>
-                </div>
-
-                <span class="service-arrow">↗</span>
-            </div>
-
-            <div class="service-item reveal">
-                <span class="service-number">06</span>
-
-                <div class="service-content">
-                    <h3>Manutenção</h3>
-
-                    <p>
-                        Atualizações e melhorias para manter seu site
-                        funcional, seguro e visualmente atualizado.
-                    </p>
-                </div>
-
-                <span class="service-arrow">↗</span>
-            </div>
-
+      </section>
+      <section
+        class="section services"
+        id="servicos"
+        aria-labelledby="services-title"
+      >
+        <div class="container services-layout">
+          <div class="services-heading">
+            <span class="eyebrow">02 / COMO POSSO AJUDAR</span>
+            <h2 id="services-title">
+              A solução certa<br />para o seu <br /><em>momento.</em>
+            </h2>
+            <p>
+              Do primeiro site a uma nova apresentação da sua marca. Definimos o
+              formato a partir do que você precisa comunicar.
+            </p>
+            <a href="#contato" class="text-link"
+              >Conversar sobre meu projeto <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="services-list">
+            <details class="service">
+              <summary>
+                <span class="service-number">01</span
+                ><span class="service-summary"
+                  ><strong>Sites institucionais</strong
+                  ><span>Para apresentar seu negócio com clareza.</span></span
+                ><span class="service-expand" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-description">
+                <p>
+                  Páginas que organizam sua apresentação, serviços e formas de
+                  contato em uma experiência alinhada à sua marca.
+                </p>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Tenho%20interesse%20em%20sites%20institucionais.%20Podemos%20conversar%20sobre%20meu%20projeto%3F"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Conversar sobre sites institucionais
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service">
+              <summary>
+                <span class="service-number">02</span
+                ><span class="service-summary"
+                  ><strong>Landing pages</strong
+                  ><span>Uma página com um objetivo bem definido.</span></span
+                ><span class="service-expand" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-description">
+                <p>
+                  Uma apresentação focada em divulgar um produto, serviço ou
+                  campanha e conduzir o visitante até a próxima ação.
+                </p>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Tenho%20interesse%20em%20landing%20pages.%20Podemos%20conversar%20sobre%20meu%20projeto%3F"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Conversar sobre landing pages
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service">
+              <summary>
+                <span class="service-number">03</span
+                ><span class="service-summary"
+                  ><strong>Portfólios</strong
+                  ><span>Seu trabalho em primeiro plano.</span></span
+                ><span class="service-expand" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-description">
+                <p>
+                  Projetos, trajetória e especialidades reunidos em uma
+                  apresentação própria para profissionais e marcas.
+                </p>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Tenho%20interesse%20em%20portf%C3%B3lios.%20Podemos%20conversar%20sobre%20meu%20projeto%3F"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Conversar sobre portfólios
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service">
+              <summary>
+                <span class="service-number">04</span
+                ><span class="service-summary"
+                  ><strong>Lojas virtuais</strong
+                  ><span
+                    >Produtos bem apresentados, jornada organizada.</span
+                  ></span
+                ><span class="service-expand" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-description">
+                <p>
+                  Estrutura de catálogo e experiência de compra planejadas
+                  conforme a plataforma e os recursos necessários ao projeto.
+                </p>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Tenho%20interesse%20em%20lojas%20virtuais.%20Podemos%20conversar%20sobre%20meu%20projeto%3F"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Conversar sobre lojas virtuais
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service">
+              <summary>
+                <span class="service-number">05</span
+                ><span class="service-summary"
+                  ><strong>Estrutura e SEO</strong
+                  ><span
+                    >Clareza também para os mecanismos de busca.</span
+                  ></span
+                ><span class="service-expand" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-description">
+                <p>
+                  Organização de títulos, descrições, conteúdo e estrutura das
+                  páginas como base para a presença do site nas buscas.
+                </p>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Tenho%20interesse%20em%20estrutura%20e%20seo.%20Podemos%20conversar%20sobre%20meu%20projeto%3F"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Conversar sobre estrutura e seo
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+            <details class="service">
+              <summary>
+                <span class="service-number">06</span
+                ><span class="service-summary"
+                  ><strong>Manutenção e melhorias</strong
+                  ><span>Seu site acompanhando o seu negócio.</span></span
+                ><span class="service-expand" aria-hidden="true">+</span>
+              </summary>
+              <div class="service-description">
+                <p>
+                  Atualizações de conteúdo, ajustes de layout e melhorias de
+                  navegação conforme novas necessidades surgem.
+                </p>
+                <a
+                  href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Tenho%20interesse%20em%20manuten%C3%A7%C3%A3o%20e%20melhorias.%20Podemos%20conversar%20sobre%20meu%20projeto%3F"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Conversar sobre manutenção e melhorias
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+          </div>
         </div>
-
-    </div>
-
-</section>
-    <!-- CONTATO -->
-
-   <section class="contact" id="contato">
-
-    <div class="contact-container reveal">
-
-        <span class="contact-label">VAMOS CONVERSAR</span>
-
-        <h2>
-            Pronto para transformar
-            sua presença digital?
-        </h2>
-
-        <p>
-            Solicite um orçamento e vamos desenvolver um site
-            moderno, estratégico e totalmente personalizado
-            para o seu negócio.
-        </p>
-
-        <div class="contact-actions">
-
-            <a
-                href="https://wa.me/5511939620165"
+      </section>
+      <section class="section about" id="sobre" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <div class="about-heading">
+            <span class="eyebrow">03 / QUEM ESTÁ POR TRÁS</span>
+            <h2 id="about-title">Prazer,<br /><em>Rafaella.</em></h2>
+            <div class="about-signature">
+              <span class="about-rb" aria-hidden="true">RB</span
+              ><span>DESENVOLVEDORA WEB<br />SÃO PAULO — SP</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <h3>Design com intenção.<br />Código com cuidado.</h3>
+            <p>
+              Sou desenvolvedora web e crio sites que combinam uma apresentação
+              bem cuidada com uma navegação simples de entender.
+            </p>
+            <p>
+              Meu ponto de partida é a identidade de cada negócio: o que
+              oferece, para quem fala e o que precisa comunicar. A partir disso,
+              organizo o conteúdo e desenvolvo uma experiência que faça sentido
+              para quem visita.
+            </p>
+            <div class="about-principles">
+              <div>
+                <span>01</span><strong>Identidade própria</strong>
+                <p>Escolhas visuais conectadas à sua marca.</p>
+              </div>
+              <div>
+                <span>02</span><strong>Clareza na experiência</strong>
+                <p>Conteúdo e navegação pensados para o visitante.</p>
+              </div>
+              <div>
+                <span>03</span><strong>Atenção aos detalhes</strong>
+                <p>Cuidado com a apresentação em diferentes telas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section process"
+        id="processo"
+        aria-labelledby="process-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">04 / DO PRIMEIRO CONTATO À ENTREGA</span>
+              <h2 id="process-title">
+                Um processo claro.<br /><em>Do início ao site.</em>
+              </h2>
+            </div>
+            <p>
+              Você acompanha as decisões que dão forma ao projeto, com escopo e
+              etapas definidos na proposta.
+            </p>
+          </div>
+          <ol class="process-steps">
+            <li>
+              <span class="step-number">01</span>
+              <h3>Conversa</h3>
+              <p>
+                Entendemos seu negócio, suas referências e o que o site precisa
+                fazer.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <h3>Proposta</h3>
+              <p>
+                Alinhamos páginas, recursos, investimento e prazo antes de
+                começar.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <h3>Criação</h3>
+              <p>
+                Organizo o conteúdo, desenvolvo o layout e ajustamos a
+                apresentação.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">04</span>
+              <h3>Entrega</h3>
+              <p>
+                Conferimos a navegação e os detalhes para preparar o site para
+                publicação.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="contact" id="contato" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-top">
+            <span class="eyebrow">VAMOS CRIAR ALGO SEU</span
+            ><span class="contact-location"
+              >SÃO PAULO · ATENDIMENTO ON-LINE</span
+            >
+          </div>
+          <div class="contact-main">
+            <h2 id="contact-title">
+              Sua próxima ideia<br />merece um<br /><em>bom começo.</em>
+            </h2>
+            <div class="contact-copy">
+              <p>
+                Me conte sobre o seu negócio e o que você imagina para o site. A
+                conversa começa por aqui.
+              </p>
+              <a
+                class="button button-light"
+                href="https://wa.me/5511939620165?text=Ol%C3%A1%2C%20Rafaella%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn-contact"
-            >
-                Solicitar orçamento
-                <span>↗</span>
-            </a>
-
-            <a
-                href="mailto:rafaellabressandacosta14@gmail.com"
+                >Solicitar orçamento <span aria-hidden="true">↗</span></a
+              ><a
                 class="contact-email"
-            >
-                rafaellabressandacosta14@gmail.com
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- RODAPÉ -->
-
-    <footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- MARCA -->
-        <div class="footer-brand">
-            <div class="footer-logo">RB</div>
-
-            <p>
-                © 2026 Rafaella Bressan.<br>
-                Todos os direitos reservados.
-            </p>
-        </div>
-
-
-        <!-- NAVEGAÇÃO -->
-        <div class="footer-column">
-
-            <span class="footer-title">NAVEGAÇÃO</span>
-
-            <div class="footer-nav">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
+                href="mailto:rafaellabressandacosta14@gmail.com"
+                >rafaellabressandacosta14@gmail.com</a
+              ><span class="contact-caption"
+                >Prefere e-mail? Também podemos conversar por lá.</span
+              >
             </div>
-
+          </div>
         </div>
-
-
-        <!-- REDES -->
-        <div class="footer-column">
-
-            <span class="footer-title">REDES SOCIAIS</span>
-
-            <div class="footer-social">
-
-    <!-- LINKEDIN -->
-    <a href="https://www.linkedin.com/in/rafaella-bressan-da-costa-45113a342/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="LinkedIn">
-
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-8.78c0-2.1-.04-4.8-2.93-4.8-2.93 0-3.38 2.29-3.38 4.65V24h-4V8z"/>
-        </svg>
-
-    </a>
-
-
-    <!-- GITHUB -->
-    <a href="https://github.com/RafaellaBressan"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="GitHub">
-
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.3 9.2 7.8 10.7.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.7 7.8-10.7C23.4 5.8 18.3.7 12 .7z"/>
-        </svg>
-
-    </a>
-
-        <!-- INSTAGRAM -->
-    <a href="https://www.instagram.com/rafaellabressan.dev/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Instagram">
-
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.4.5.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.4-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.4-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.4.2-.6.5-1 1-1.5s.9-.8 1.5-1c.5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.4.2-.8.4-1.1.7-.3.3-.5.7-.7 1.1-.2.4-.3 1-.4 2.1C3 9.6 3 10 3 12s0 2.4.1 3.6c.1 1.1.2 1.7.4 2.1.2.4.4.8.7 1.1.3.3.7.5 1.1.7.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.4-.2.8-.4 1.1-.7.3-.3.5-.7.7-1.1.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.6s0-2.4-.1-3.6c-.1-1.1-.2-1.7-.4-2.1-.2-.4-.4-.8-.7-1.1-.3-.3-.7-.5-1.1-.7-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.2A4.8 4.8 0 1 1 12 16.8 4.8 4.8 0 0 1 12 7.2zm0 1.8a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5-2.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
-        </svg>
-
-    </a>
-
-</div>
-
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <a class="brand" href="#inicio" aria-label="Voltar ao início"
+            >RB<span class="brand-name">RAFAELLA<br />BRESSAN</span></a
+          >
+          <nav class="footer-links" aria-label="Redes profissionais">
+            <a
+              href="https://www.instagram.com/rafaellabressan.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram <span aria-hidden="true">↗</span></a
+            ><a
+              href="https://www.linkedin.com/in/rafaella-bressan-da-costa-45113a342/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn <span aria-hidden="true">↗</span></a
+            ><a
+              href="https://github.com/RafaellaBressan"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+          </nav>
+          <a class="back-to-top" href="#inicio"
+            >Voltar ao topo <span aria-hidden="true">↑</span></a
+          >
         </div>
-
-
-        <!-- EMAIL -->
-        <div class="footer-column footer-email">
-
-            <span class="footer-title">E-MAIL</span>
-
-            <a href="mailto:rafaellabressandacosta14@gmail.com">
-                rafaellabressandacosta14@gmail.com
-            </a>
-
+        <div class="footer-bottom">
+          <p>© 2026 Rafaella Bressan. Todos os direitos reservados.</p>
+          <span>DESIGN &amp; DESENVOLVIMENTO POR RB</span>
         </div>
-
-    </div>
-
-</footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/loader.js"></script>
-
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>
